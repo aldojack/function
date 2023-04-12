@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Logo from "../assets/logo.svg";
+import BagIcon from '../assets/bag-icon.svg';
+import MenuIcon from '../assets/menu-icon.svg';
 
 export default function Navbar() {
     const [nav, setNav] = useState(false);
@@ -8,10 +10,12 @@ export default function Navbar() {
       setNav(!nav);
     }
   return (
-    <div className=" bg-white fixed top-0 w-full h-24 shadow-xl z-[100] pt=4">
-      <div className="flex items-center w-full h-full px-4 2xl:px-16">
+    <div className=" bg-white w-full h-24 border-b-2 md:border-b-0 z-[100] pt-4">
+      <div className="flex justify-between items-center w-full h-full flex-wrap px-8 2xl:px-16">
       {/* Logo */}
-        <img src={Logo} alt="" width="170" height="50" />
+      <div className="h-full border-r-0 md:border-r-2 flex-shrink-0 order-1 md:order-first">
+        <img src={Logo} alt="" width="170" height="50" className="h-full pr-8"/>
+      </div>
         {/* Navigation Menu */}
         <nav>
           <ul className="hidden md:flex">
@@ -34,13 +38,18 @@ export default function Navbar() {
               Gifts
             </li>
           </ul>
-          <div onClick={handleNav} className="md:hidden cursor-pointer">
-            <AiOutlineMenu size={35} />
+          <div onClick={handleNav} className="md:hidden flex order-first cursor-pointer">
+            {/* <AiOutlineMenu size={35} /> */}
+            <img src={MenuIcon} alt="" width="17" height="17" className="md:hidden"/>
+            <span className=" ml-4">Menu</span>
           </div>
         </nav>
+        <div className="order-2">
+          <img src={BagIcon} alt="" width="17" height="17" className="md:hidden"/>
+        </div>
         {/* Search Bar */}
-        <div>
-        <input type="search" className="bg-[#F1F1F2] min-w-xs px-5 py-4" placeholder="Search for 'Cashmere'"/>
+        <div className="ml-auto w-full md:max-w-sm mt-4 block order-last md:flex md:flex-shrink">
+        <input type="search" className="bg-[#F1F1F2] w-full px-5 py-4" placeholder="Search for 'Cashmere'"/>
         </div>
       </div>
       {/* Popout Menu */}
