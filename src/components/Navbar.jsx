@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center w-full h-full flex-wrap md:flex-nowrap px-8 2xl:px-16">
       {/* Logo */}
       <div className="h-full border-r-0 md:border-r-2 flex-shrink-0 order-1 md:order-first">
-        <img src={Logo} alt="" width="170" height="50" className="h-full pr-8"/>
+        <img src={Logo} alt="Functions Logo" width="170" height="50" className="h-full pr-8"/>
       </div>
         {/* Navigation Menu */}
         <nav>
@@ -48,7 +48,7 @@ export default function Navbar() {
           <img src={BagIcon} alt="" width="17" height="17" className="md:hidden"/>
         </div>
         {/* Search Bar */}
-        <div className="ml-auto w-full md:max-w-sm mt-4 block order-last md:flex md:flex-shrink md:max-w-[330px]">
+        <div className="ml-auto w-full mt-4 block order-last md:flex md:flex-shrink md:max-w-[330px]">
         <input type="search" className="bg-[#F1F1F2] w-full px-5 py-4" placeholder="Search for 'Cashmere'"/>
         </div>
       </div>

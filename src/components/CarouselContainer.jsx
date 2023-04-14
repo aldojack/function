@@ -21,7 +21,7 @@ const productList = productsData.map((product) => (
 
 export default function CarouselContainer() {
   return (
-    <div className="w-full">
+    <section className="w-full">
       <div className="flex justify-between items-center mx-6 mt-12 ">
         <h2 className="text-xl md:text-2xl">Best Sellers</h2>
         <div className="flex m-6 items-center justify-center max-w-[220px] border-gray-400 border-2 cursor-pointer">
@@ -37,6 +37,6 @@ export default function CarouselContainer() {
       <div className="overflow-x-auto whitespace-nowrap mx-8">
         <div className="inline-flex w-screen space-x-6">{productList}</div>
       </div>
-    </div>
+    </section>
   );
 }

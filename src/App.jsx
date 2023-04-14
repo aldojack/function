@@ -1,17 +1,19 @@
 import CarouselContainer from "./components/CarouselContainer"
+import DoorwayContainer from "./components/DoorwayContainer"
 import Feature from "./components/Feature"
 import Navbar from "./components/Navbar"
-import Product from "./components/Product"
 
 function App() {
   
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full">
       <Navbar/>
+      <main className="h-screen">
       <Feature/>
       <CarouselContainer/>
-    
+      <DoorwayContainer/>
+      </main>
     </div>
   )
 }
