@@ -28,7 +28,7 @@ export default function CarouselContainer() {
         <CTABtn name="Shop All" width="220px"/>
       </div>
       {/* Product Container */}
-      <div className="overflow-x-auto whitespace-nowrap mx-8">
+      <div className="carousel overflow-x-auto whitespace-nowrap mx-8 lg:justify-center lg:items-center">
         <div className="inline-flex w-screen space-x-6">{productList}</div>
       </div>
     </section>
