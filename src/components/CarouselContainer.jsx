@@ -25,7 +25,7 @@ export default function CarouselContainer() {
     <section className="w-full">
       <div className="flex items-baseline mx-6 my-12 ">
         <h2 className="text-xl md:text-2xl mr-auto">Best Sellers</h2>
-        <CTABtn name="Shop All" width="220px"/>
+        <CTABtn name="Shop All"/>
       </div>
       {/* Product Container */}
       <div className="carousel overflow-x-auto whitespace-nowrap mx-8 lg:justify-center lg:items-center">

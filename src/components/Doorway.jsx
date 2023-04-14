@@ -9,7 +9,7 @@ export default function Doorway({title, description, img}) {
         <p className="text-[#808080]">
           {description}
         </p>
-        <CTABtn name="Shop All" width={"125px"}/>
+        <CTABtn name="Shop All"/>
       </div>
     </article>
   );
