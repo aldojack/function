@@ -1,3 +1,4 @@
+import Banner from "./components/Banner"
 import CarouselContainer from "./components/CarouselContainer"
 import DoorwayContainer from "./components/DoorwayContainer"
 import Feature from "./components/Feature"
@@ -13,6 +14,7 @@ function App() {
       <Feature/>
       <CarouselContainer/>
       <DoorwayContainer/>
+      <Banner/>
       </main>
     </div>
   )
