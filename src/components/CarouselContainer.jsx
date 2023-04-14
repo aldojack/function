@@ -6,6 +6,7 @@ import product2 from "../assets/product-image-2.png";
 import product3 from "../assets/product-image-3.png";
 import product4 from "../assets/product-image-4.png";
 import product5 from "../assets/product-image-5.png";
+import CTABtn from "./CTABtn";
 
 const productsData = [
   { id: 1, img: product1, name: "Fredo Jacket", price: "£230" },
@@ -22,16 +23,9 @@ const productList = productsData.map((product) => (
 export default function CarouselContainer() {
   return (
     <section className="w-full">
-      <div className="flex justify-between items-center mx-6 mt-12 ">
-        <h2 className="text-xl md:text-2xl">Best Sellers</h2>
-        <div className="flex m-6 items-center justify-center max-w-[220px] border-gray-400 border-2 cursor-pointer">
-          <div className="p-4">
-            <p>Shop All</p>
-          </div>
-          <div className="items-stretch border-l-2 p-4">
-            <img src={RightArrow} className="fill-black" />
-          </div>
-        </div>
+      <div className="flex items-baseline mx-6 my-12 ">
+        <h2 className="text-xl md:text-2xl mr-auto">Best Sellers</h2>
+        <CTABtn name="Shop All" width="220px"/>
       </div>
       {/* Product Container */}
       <div className="overflow-x-auto whitespace-nowrap mx-8">
