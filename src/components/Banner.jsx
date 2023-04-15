@@ -4,9 +4,9 @@ import RightArrow from '../assets/right-arrow.svg'
 export default function Banner() {
   return (
     <section className="w-full flex justify-center items-center bg-[#19291C] text-white">
-      <div className="text-center px-6 py-12 flex flex-col items-center">
-        <h3 className=" text-xl">Get your gifts in time for the holidays</h3>
-        <p className=" opacity-50 text-sm">
+      <div className="text-center px-6 py-12 flex flex-col items-center max-w-[300px] md:max-w-full">
+        <h3 className=" text-xl md:text-2xl">Get your gifts in time for the holidays</h3>
+        <p className=" opacity-50 text-sm mt-2">
           Free, extended returns until January
         </p>
         <div

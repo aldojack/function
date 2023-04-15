@@ -18,7 +18,7 @@ export default function Navbar() {
       </div>
         {/* Navigation Menu */}
         <nav>
-          <ul className="hidden md:flex items-center justify-center">
+          <ul className="hidden md:flex items-center justify-center space-x-6">
             <li className="ml-10 text-sm hover:border-b hover:underline cursor-pointer">
               What's New
             </li>
@@ -48,7 +48,7 @@ export default function Navbar() {
           <img src={BagIcon} alt="" width="17" height="17" className="md:hidden"/>
         </div>
         {/* Search Bar */}
-        <div className="ml-auto w-full mt-4 block order-last md:flex md:flex-shrink-0 md:max-w-[330px]">
+        <div className="ml-auto w-full mt-4 block order-last md:hidden lg:flex lg:flex-shrink-1 lg:max-w-[330px]">
         <input type="search" className="bg-[#F1F1F2] w-full px-5 py-4" placeholder="Search for 'Cashmere'"/>
         </div>
       </div>
@@ -80,19 +80,37 @@ export default function Navbar() {
                 onClick={() => setNav(false)}
                 className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-pointer"
               >
-                Home
+                What's New
               </li>
               <li
                 onClick={() => setNav(false)}
                 className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-not-allowed"
               >
-                Account
+                Designers
               </li>
               <li
                 onClick={() => setNav(false)}
                 className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-not-allowed"
               >
-                Log Off
+                Clothing
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-not-allowed"
+              >
+                Accessories
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-not-allowed"
+              >
+                Journal
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-not-allowed"
+              >
+                Gifts
               </li>
             </ul>
           </nav>
