@@ -1,5 +1,7 @@
 import React from "react";
 
+const currentYear = new Date().getFullYear();
+
 export default function Footer() {
   return (
     <footer className="w-full bg-[#282B3A] text-[#91939F]">
@@ -36,7 +38,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-center items-center border-t-2 py-16 space-x-4 text-white">
-        <p>&copy; Function 2023</p>
+        <p>&copy; Function {currentYear}</p>
         <p>Site Map</p>
       </div>
     </footer>

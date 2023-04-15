@@ -60,7 +60,7 @@ export default function Navbar() {
             <span className=" ml-4">Menu</span>
           </div>
         </nav>
-        <div className="order-2">
+        <div className="order-2 cursor-pointer">
           <img
             src={BagIcon}
             alt=""
@@ -103,41 +103,41 @@ export default function Navbar() {
               <AiOutlineClose />
             </div>
           </div>
-          <nav className="py-4 flex flex-col items-center border-y border-[#FF7F50]">
+          <nav className="py-4 mt-4 flex flex-col items-center border-y border-[#3936EE]">
             <ul>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-pointer"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
               >
                 What's New
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-not-allowed"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-not-allowed"
               >
                 Designers
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-not-allowed"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-not-allowed"
               >
                 Clothing
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-not-allowed"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-not-allowed"
               >
                 Accessories
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-not-allowed"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-not-allowed"
               >
                 Journal
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300 cursor-not-allowed"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-not-allowed"
               >
                 Gifts
               </li>
