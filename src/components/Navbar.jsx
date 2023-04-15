@@ -27,22 +27,22 @@ export default function Navbar() {
         <nav>
           <ul className="hidden md:flex items-center justify-center space-x-6">
             <li className="ml-10 text-sm hover:border-b hover:underline cursor-pointer">
-              What's New
+              <a href="#">What's New</a>
             </li>
             <li className="ml-10 text-sm hover:border-b hover:underline cursor-pointer">
-              Designers
+              <a href="#">Designers</a>
             </li>
             <li className="ml-10 text-sm hover:border-b hover:underline cursor-pointer">
-              Clothing
+              <a href="#">Clothing</a>
             </li>
             <li className="ml-10 text-sm hover:border-b hover:underline cursor-pointer">
-              Accessories
+              <a href="#">Accessories</a>
             </li>
             <li className="ml-10 text-sm hover:border-b hover:underline cursor-pointer">
-              Journal
+              <a href="#">Journal</a>
             </li>
             <li className="ml-10 text-sm hover:border-b hover:underline cursor-pointer">
-              Gifts
+              <a href="#">Gifts</a>
             </li>
           </ul>
           <div
@@ -70,14 +70,14 @@ export default function Navbar() {
           />
         </div>
         {/* Search Bar */}
-        <div className="ml-auto w-full mt-4 block order-last md:hidden lg:flex lg:flex-shrink-1 lg:max-w-[330px]">
+        <div className="ml-auto w-full mt-4 block order-last md:hidden lg:flex lg:flex-shrink-1 lg:max-w-[20rem]">
           <div className="relative">
             <input
               type="search"
               className="bg-[#F1F1F2] w-full px-12 py-4"
               placeholder="Search for 'Cashmere'"
             />
-            <img src={Search} className="absolute top-0 left-0 mt-5 ml-4"/>
+            <img src={Search} className="absolute top-0 left-0 mt-5 ml-4" />
           </div>
         </div>
       </div>
@@ -109,37 +109,37 @@ export default function Navbar() {
                 onClick={() => setNav(false)}
                 className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
               >
-                What's New
+                <a href="#">What's New</a>
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-not-allowed"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
               >
-                Designers
+                <a href="#">Designers</a>
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-not-allowed"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
               >
-                Clothing
+                <a href="#">Clothing</a>
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-not-allowed"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
               >
-                Accessories
+                <a href="#">Accessories</a>
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-not-allowed"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
               >
-                Journal
+                <a href="#">Journal</a>
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-not-allowed"
+                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
               >
-                Gifts
+                <a href="#">Gifts</a>
               </li>
             </ul>
           </nav>
