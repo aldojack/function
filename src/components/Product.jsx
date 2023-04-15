@@ -3,7 +3,7 @@ import Heart from "../assets/heart.svg";
 
 export default function Product({img, name, price}) {
   return (
-    <div className="max-w-[253px] md:max-w-[332px] shrink-0">
+    <div className="max-w-[16rem] md:max-w-[20.75rem] shrink-0">
       <img src={img} className="cursor-pointer"/>
       <div className="flex justify-between items-center mt-6">
         <div className="flex flex-col space-y-1 text-sm">
