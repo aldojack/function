@@ -9,31 +9,31 @@ export default function Footer() {
         <div className="flex flex-col">
           <h3 className="text-white text-lg mb-3">Account</h3>
           <div className="flex flex-col space-y-1">
-          <a>Login</a>
-          <a>Sign Up</a>
-          <a>Redeem a Gift Card</a>
+          <a href="#">Sign Up</a>
+          <a href="#">Login</a>
+          <a href="#">Redeem a Gift Card</a>
           </div>
         </div>
         <div className="flex flex-col">
           <h3 className="text-white text-lg mb-3">Company</h3>
           <div className="flex flex-col space-y-1">
-          <a>VIP Lounge Rewards</a>
-          <a>Reviews</a>
-          <a>Sustainability</a>
-          <a>Recycling Scheme</a>
-          <a>About Us</a>
-          <a>Become an Affiliate</a>
-          <a>Careers</a>
-          <a>Stocklists</a>
+          <a href="#">VIP Lounge Rewards</a>
+          <a href="#">Reviews</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Recycling Scheme</a>
+          <a href="#">About Us</a>
+          <a href="#">Become an Affiliate</a>
+          <a href="#">Careers</a>
+          <a href="#">Stocklists</a>
           </div>
         </div>
         <div className="flex flex-col">
           <h3 className="text-white text-lg mb-3">Get Help</h3>
           <div className="flex flex-col space-y-1">
-            <a>Contact Us</a>
-            <a>FAQs</a>
-            <a>Shipping Information</a>
-            <a>Return Policy</a>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQs</a>
+            <a href="#">Shipping Information</a>
+            <a href="#">Return Policy</a>
           </div>
         </div>
       </div>

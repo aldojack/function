@@ -37,3 +37,8 @@ html, body{
   background-color: #555;
 }
 
+:focus {
+  outline: 2px solid #007ACC; /* You can choose your preferred color and style */
+}
+
+

@@ -1,5 +1,4 @@
 import React from "react";
-import RightArrow from "../assets/right-arrow-black.svg";
 import Product from "./Product";
 import product1 from "../assets/product-image-1.png";
 import product2 from "../assets/product-image-2.png";
@@ -28,7 +27,7 @@ export default function CarouselContainer() {
         <CTABtn name="Shop All"/>
       </div>
       {/* Product Container */}
-      <div className="carousel overflow-x-auto whitespace-nowrap mx-8 lg:justify-center lg:items-center">
+      <div className="carousel overflow-x-auto whitespace-nowrap mx-8 lg:justify-center lg:items-center focus:outline-2 outline-blue-600">
         <div className="inline-flex w-screen space-x-6">{productList}</div>
       </div>
     </section>

@@ -49,7 +49,6 @@ export default function Navbar() {
             onClick={handleNav}
             className="md:hidden flex order-first cursor-pointer"
           >
-            {/* <AiOutlineMenu size={35} /> */}
             <img
               src={MenuIcon}
               alt=""
@@ -77,14 +76,14 @@ export default function Navbar() {
               className="bg-[#F1F1F2] w-full px-12 py-4"
               placeholder="Search for 'Cashmere'"
             />
-            <img src={Search} className="absolute top-0 left-0 mt-5 ml-4" />
+            <img src={Search} className="absolute top-0 left-0 mt-5 ml-4" alt="search icon within search bar" />
           </div>
         </div>
       </div>
       {/* Popout Menu */}
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80" : ""
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80" : "hidden"
         }
       >
         <div
