@@ -11,7 +11,7 @@ export default function Navbar() {
     setNav(!nav);
   }
   return (
-    <div className=" bg-white w-full h-24 border-b-2 md:border-b-0 z-[100] pt-4">
+    <div className=" bg-white w-full h-16 border-b-2 md:border-b-0 z-[100] pt-4">
       <div className="flex justify-between md:justify-center items-center w-full h-full flex-wrap md:flex-nowrap px-8 2xl:px-16">
         {/* Logo */}
         <div className="h-full border-r-0 md:border-r-2 flex-shrink-0 order-1 md:order-first">
@@ -70,7 +70,7 @@ export default function Navbar() {
           />
         </div>
         {/* Search Bar */}
-        <div className="ml-auto w-full mt-4 block order-last md:hidden lg:flex lg:flex-shrink-1 lg:max-w-[20rem]">
+        <div className="ml-auto w-full my-4 block order-last md:hidden lg:flex lg:flex-shrink-1 lg:max-w-[20rem]">
           <div className="relative">
             <input
               type="search"
