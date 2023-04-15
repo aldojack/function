@@ -1,21 +1,28 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Logo from "../assets/logo.svg";
-import BagIcon from '../assets/bag-icon.svg';
-import MenuIcon from '../assets/menu-icon.svg';
+import BagIcon from "../assets/bag-icon.svg";
+import MenuIcon from "../assets/menu-icon.svg";
+import Search from "../assets/search.svg";
 
 export default function Navbar() {
-    const [nav, setNav] = useState(false);
-    function handleNav() {
-      setNav(!nav);
-    }
+  const [nav, setNav] = useState(false);
+  function handleNav() {
+    setNav(!nav);
+  }
   return (
     <div className=" bg-white w-full h-24 border-b-2 md:border-b-0 z-[100] pt-4">
       <div className="flex justify-between md:justify-center items-center w-full h-full flex-wrap md:flex-nowrap px-8 2xl:px-16">
-      {/* Logo */}
-      <div className="h-full border-r-0 md:border-r-2 flex-shrink-0 order-1 md:order-first">
-        <img src={Logo} alt="Functions Logo" width="170" height="50" className="h-full pr-8"/>
-      </div>
+        {/* Logo */}
+        <div className="h-full border-r-0 md:border-r-2 flex-shrink-0 order-1 md:order-first">
+          <img
+            src={Logo}
+            alt="Functions Logo"
+            width="170"
+            height="50"
+            className="h-full pr-8"
+          />
+        </div>
         {/* Navigation Menu */}
         <nav>
           <ul className="hidden md:flex items-center justify-center space-x-6">
@@ -38,18 +45,40 @@ export default function Navbar() {
               Gifts
             </li>
           </ul>
-          <div onClick={handleNav} className="md:hidden flex order-first cursor-pointer">
+          <div
+            onClick={handleNav}
+            className="md:hidden flex order-first cursor-pointer"
+          >
             {/* <AiOutlineMenu size={35} /> */}
-            <img src={MenuIcon} alt="" width="17" height="17" className="md:hidden"/>
+            <img
+              src={MenuIcon}
+              alt=""
+              width="17"
+              height="17"
+              className="md:hidden"
+            />
             <span className=" ml-4">Menu</span>
           </div>
         </nav>
         <div className="order-2">
-          <img src={BagIcon} alt="" width="17" height="17" className="md:hidden"/>
+          <img
+            src={BagIcon}
+            alt=""
+            width="17"
+            height="17"
+            className="md:hidden"
+          />
         </div>
         {/* Search Bar */}
         <div className="ml-auto w-full mt-4 block order-last md:hidden lg:flex lg:flex-shrink-1 lg:max-w-[330px]">
-        <input type="search" className="bg-[#F1F1F2] w-full px-5 py-4" placeholder="Search for 'Cashmere'"/>
+          <div className="relative">
+            <input
+              type="search"
+              className="bg-[#F1F1F2] w-full px-12 py-4"
+              placeholder="Search for 'Cashmere'"
+            />
+            <img src={Search} className="absolute top-0 left-0 mt-5 ml-4"/>
+          </div>
         </div>
       </div>
       {/* Popout Menu */}
