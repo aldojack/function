@@ -10,7 +10,7 @@ export default function Product({img, name, price}) {
           <p>{price}</p>
         </div>
         <div>
-          <img src={Heart} className="cursor-pointer" alt="A heart icon to favoutite item" tabIndex="0"/>
+          <img src={Heart} className="cursor-pointer" alt={`A heart icon to favoutite ${name}`} tabIndex="0"/>
         </div>
       </div>
     </div>

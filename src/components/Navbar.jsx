@@ -74,6 +74,7 @@ export default function Navbar() {
         <div className="ml-auto w-full my-4 block order-last md:hidden lg:flex lg:flex-shrink-1 lg:max-w-[20rem]">
           <div className="relative">
             <input
+            aria-label="Search bar with placeholder text of cashmere"
               type="search"
               className="bg-[#F1F1F2] w-full px-12 py-4"
               placeholder="Search for 'Cashmere'"
