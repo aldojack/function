@@ -1,7 +1,10 @@
 import React from "react";
 import Doorway from "./Doorway";
-import doorway1 from '../assets/doorway-1.png';
-import doorway2 from '../assets/doorway-2.png';
+// import doorway1 from '../assets/doorway-1.png';
+// import doorway2 from '../assets/doorway-2.png';
+
+import doorway1 from '/images/doorway-1.webp';
+import doorway2 from '/images/doorway-2.webp';
 
 export default function DoorwayContainer() {
   const doorwayData = [

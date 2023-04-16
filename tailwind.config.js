@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'feature-bg': "url('/src/assets/AFeature.png')"
+        'feature-bg': "url('/images/AFeature.webp')"
       }
     },
   },

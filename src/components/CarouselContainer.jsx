@@ -1,10 +1,16 @@
 import React from "react";
 import Product from "./Product";
-import product1 from "../assets/product-image-1.png";
-import product2 from "../assets/product-image-2.png";
-import product3 from "../assets/product-image-3.png";
-import product4 from "../assets/product-image-4.png";
-import product5 from "../assets/product-image-5.png";
+// import product1 from "../assets/product-image-1.png";
+// import product2 from "../assets/product-image-2.png";
+// import product3 from "../assets/product-image-3.png";
+// import product4 from "../assets/product-image-4.png";
+// import product5 from "../assets/product-image-5.png";
+
+import product1 from "/images/product-image-1.webp";
+import product2 from "/images/product-image-2.webp";
+import product3 from "/images/product-image-3.webp";
+import product4 from "/images/product-image-4.webp";
+import product5 from "/images/product-image-5.webp";
 import CTABtn from "./CTABtn";
 
 const productsData = [
