@@ -11,7 +11,7 @@ export default function Banner() {
         <p className=" opacity-50 text-sm mt-2">
           Free, extended returns until January
         </p>
-        <button className="flex mt-6 items-center justify-center min-w-fit border-gray-400 border-2 cursor-pointer">
+        <div className="flex mt-6 items-center justify-center min-w-fit border-gray-400 border-2 cursor-pointer">
           <a href="#" className="p-4 flex-shrink-0">
             Learn More
           </a>
@@ -19,7 +19,7 @@ export default function Banner() {
           <div className="items-stretch border-l-2 p-4">
             <RightArrow fillColour="#fff" />
           </div>
-        </button>
+        </div>
       </div>
     </section>
   );

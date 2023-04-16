@@ -24,7 +24,7 @@ export default function Navbar() {
           />
         </div>
         {/* Navigation Menu */}
-        <nav>
+        <nav aria-label="Main Navigation">
           <ul className="hidden md:flex items-center justify-center space-x-6">
             <li className="ml-10 text-sm hover:border-b hover:underline cursor-pointer">
               <a href="#">What's New</a>
@@ -45,19 +45,21 @@ export default function Navbar() {
               <a href="#">Gifts</a>
             </li>
           </ul>
-          <div
+          <button
+            aria-haspopup="true"
+            aria-expanded={nav}
             onClick={handleNav}
             className="md:hidden flex order-first cursor-pointer"
           >
             <img
               src={MenuIcon}
-              alt=""
+              alt="Open Menu"
               width="17"
               height="17"
               className="md:hidden"
             />
             <span className=" ml-4">Menu</span>
-          </div>
+          </button>
         </nav>
         <div className="order-2 cursor-pointer">
           <img
@@ -76,14 +78,21 @@ export default function Navbar() {
               className="bg-[#F1F1F2] w-full px-12 py-4"
               placeholder="Search for 'Cashmere'"
             />
-            <img src={Search} className="absolute top-0 left-0 mt-5 ml-4" alt="search icon within search bar" />
+            <img
+              src={Search}
+              className="absolute top-0 left-0 mt-5 ml-4"
+              alt="search icon within search bar"
+            />
           </div>
         </div>
       </div>
       {/* Popout Menu */}
-      <div
+      <button
+        aria-label="Mobile Navigation"
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80" : "hidden"
+          nav
+            ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80"
+            : "hidden"
         }
       >
         <div
@@ -94,56 +103,51 @@ export default function Navbar() {
           }
         >
           <div className="flex w-full items-center justify-between">
-            <img src={Logo} alt="" width="150" height="35" />
-            <div
+            <img src={Logo} alt="Company Logo" width="150" height="35" />
+            <button
               onClick={handleNav}
               className="rounded-full shadow-lg p-3 cursor-pointer bg-red-500 hover:bg-red-600"
+              aria-label="Close mobile navigation"
             >
               <AiOutlineClose />
-            </div>
+            </button>
           </div>
           <nav className="py-4 mt-4 flex flex-col items-center border-y border-[#3936EE]">
             <ul>
-              <li
-                onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
-              >
-                <a href="#">What's New</a>
+              <li className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer">
+                <a href="#" onClick={() => setNav(false)}>
+                  What's New
+                </a>
               </li>
-              <li
-                onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
-              >
-                <a href="#">Designers</a>
+              <li className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer">
+                <a href="#" onClick={() => setNav(false)}>
+                  Designers
+                </a>
               </li>
-              <li
-                onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
-              >
-                <a href="#">Clothing</a>
+              <li className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer">
+                <a href="#" onClick={() => setNav(false)}>
+                  Clothing
+                </a>
               </li>
-              <li
-                onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
-              >
-                <a href="#">Accessories</a>
+              <li className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer">
+                <a href="#" onClick={() => setNav(false)}>
+                  Accessories
+                </a>
               </li>
-              <li
-                onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
-              >
-                <a href="#">Journal</a>
+              <li className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer">
+                <a href="#" onClick={() => setNav(false)}>
+                  Journal
+                </a>
               </li>
-              <li
-                onClick={() => setNav(false)}
-                className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer"
-              >
-                <a href="#">Gifts</a>
+              <li className="py-4 text-sm hover:text-[#3936EE] ease-in duration-300 cursor-pointer">
+                <a href="#" onClick={() => setNav(false)}>
+                  Gifts
+                </a>
               </li>
             </ul>
           </nav>
         </div>
-      </div>
+      </button>
     </div>
   );
 }
