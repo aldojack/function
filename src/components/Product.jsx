@@ -1,4 +1,3 @@
-import placeholder from "../assets/product-image-1.png";
 import Heart from "../assets/heart.svg";
 
 export default function Product({img, name, price}) {
